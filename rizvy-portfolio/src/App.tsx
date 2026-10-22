@@ -1,24 +1,16 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
+import About from "./components/About";
+import Blogs from "./components/Blogs";
+import Contact from "./components/Contact";
+import Experience from "./components/Experience";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Loader from "./components/Loader";
 import Navbar from "./components/Navbar";
-import About from "./components/About";
-import Skills from "./components/Skills";
 import Projects from "./components/Projects";
-import Experience from "./components/Experience";
-import Blogs from "./components/Blogs";
 import ScrollProgress from "./components/ScrollProgress";
-
-function Placeholder({ id, title }: { id: string; title: string }) {
-  return (
-    <section id={id} className="grid min-h-screen place-items-center px-6">
-      <h2 className="font-display text-3xl text-muted md:text-4xl">
-        {title}: coming in the next step
-      </h2>
-    </section>
-  );
-}
+import Skills from "./components/Skills";
 
 export default function App() {
   const [loading, setLoading] = useState(true);
@@ -35,21 +27,18 @@ export default function App() {
       <div className="grain" aria-hidden />
       <ScrollProgress />
       <Navbar />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Experience />
-      <Blogs />
 
       <main>
-        <Placeholder id="about" title="About Me" />
-        <Placeholder id="skills" title="Skills" />
-        <Placeholder id="projects" title="Projects" />
-        <Placeholder id="experience" title="Experience" />
-        <Placeholder id="blogs" title="Blogs" />
-        <Placeholder id="contact" title="Contact Me" />
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Experience />
+        <Blogs />
+        <Contact />
       </main>
+
+      <Footer />
     </>
   );
 }

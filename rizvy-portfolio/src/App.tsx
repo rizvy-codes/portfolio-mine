@@ -7,6 +7,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Experience from "./components/Experience";
+import Blogs from "./components/Blogs";
 import ScrollProgress from "./components/ScrollProgress";
 
 function Placeholder({ id, title }: { id: string; title: string }) {
@@ -39,6 +40,7 @@ export default function App() {
       <Skills />
       <Projects />
       <Experience />
+      <Blogs />
 
       <main>
         <Placeholder id="about" title="About Me" />

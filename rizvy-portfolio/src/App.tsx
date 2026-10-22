@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Loader from "./components/Loader";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
+import Skills from "./components/Skills";
 import ScrollProgress from "./components/ScrollProgress";
 
 function Placeholder({ id, title }: { id: string; title: string }) {
@@ -31,10 +32,11 @@ export default function App() {
       <div className="grain" aria-hidden />
       <ScrollProgress />
       <Navbar />
+      <Hero />
       <About />
+      <Skills />
 
       <main>
-        <Hero />
         <Placeholder id="about" title="About Me" />
         <Placeholder id="skills" title="Skills" />
         <Placeholder id="projects" title="Projects" />

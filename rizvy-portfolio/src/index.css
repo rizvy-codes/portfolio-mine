@@ -163,3 +163,16 @@ body {
 .gradient-border:hover::before {
   opacity: 1;
 }
+
+/* Infinite marquee (Skills section) */
+.marquee-track {
+  animation: marquee 40s linear infinite;
+}
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}

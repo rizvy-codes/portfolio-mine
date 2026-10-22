@@ -5,6 +5,8 @@ import Loader from "./components/Loader";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Experience from "./components/Experience";
 import ScrollProgress from "./components/ScrollProgress";
 
 function Placeholder({ id, title }: { id: string; title: string }) {
@@ -35,6 +37,8 @@ export default function App() {
       <Hero />
       <About />
       <Skills />
+      <Projects />
+      <Experience />
 
       <main>
         <Placeholder id="about" title="About Me" />

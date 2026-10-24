@@ -4,6 +4,7 @@ import About from "./components/About";
 import Blogs from "./components/Blogs";
 import Contact from "./components/Contact";
 import ConsentBanner from "./components/ConsentBanner";
+import CustomCursor from "./components/CustomCursor";
 import Experience from "./components/Experience";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
@@ -30,14 +31,19 @@ export default function App() {
 
   return (
     <>
+      <a href="#main" className="skip-link">
+        Skip to content
+      </a>
+
       <AnimatePresence>{loading && <Loader key="loader" />}</AnimatePresence>
 
       <div className="grain" aria-hidden />
+      <CustomCursor />
       <ScrollProgress />
       <Navbar />
       <ConsentBanner />
 
-      <main>
+      <main id="main" tabIndex={-1}>
         <Hero />
         <About />
         <Skills />

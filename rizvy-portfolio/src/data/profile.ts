@@ -10,7 +10,8 @@ export const profile = {
   ],
   description:
     "I turn ideas into fast, accessible and delightful web apps, from pixel-perfect React interfaces to scalable Node.js APIs.",
-  photo: "/images/profile/redowan.png",
+  photo: "/images/profile/profile.webp",
+  photo2: "/images/profile/redowan.png",
   logo: "/images/logo/rizvy-logo.png",
   resume: "/resume.pdf", // 👈 put your PDF in the /public folder as resume.pdf
   socials: {

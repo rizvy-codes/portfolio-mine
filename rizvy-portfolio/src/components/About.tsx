@@ -39,7 +39,7 @@ export default function About() {
             />
             <div className="relative overflow-hidden rounded-3xl border border-line bg-[#07070d]">
               <img
-                src={profile.photo}
+                src={profile.photo2}
                 alt={`Portrait of ${profile.name}`}
                 loading="lazy"
                 className="aspect-[4/5] w-full object-cover object-top"

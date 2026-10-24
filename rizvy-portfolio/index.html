@@ -3,16 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Rizvy | Full Stack Web Developer</title>
     <meta
       name="description"
       content="Portfolio of Rizvy, a Full Stack Web Developer building fast, modern and accessible web apps with React, Next.js, Node.js and MongoDB."
     />
+    <meta name="author" content="Rizvy" />
     <meta name="theme-color" content="#07070d" />
-    <meta property="og:title" content="Rizvy | Full Stack Web Developer" />
-    <meta property="og:description" content="Fast, modern and accessible web apps." />
-    <meta property="og:type" content="website" />
+    <link rel="canonical" href="https://your-domain.com/" />
     <link rel="icon" href="/images/logo.png" />
+
+    <!-- Link previews (WhatsApp, LinkedIn, Facebook, Telegram) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Rizvy Portfolio" />
+    <meta property="og:title" content="Rizvy | Full Stack Web Developer" />
+    <meta
+      property="og:description"
+      content="Fast, modern and accessible web apps built with React, Node.js and MongoDB."
+    />
+    <meta property="og:url" content="https://your-domain.com/" />
+    <meta property="og:image" content="https://your-domain.com/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Rizvy | Full Stack Web Developer" />
+    <meta
+      name="twitter:description"
+      content="Fast, modern and accessible web apps built with React, Node.js and MongoDB."
+    />
+    <meta name="twitter:image" content="https://your-domain.com/og-image.png" />
+
+    <!-- Structured data for Google -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Rizvy",
+        "jobTitle": "Full Stack Web Developer",
+        "url": "https://your-domain.com/",
+        "sameAs": [
+          "https://github.com/your-username",
+          "https://linkedin.com/in/your-username"
+        ]
+      }
+    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,7 +57,7 @@
       rel="stylesheet"
     />
 
-    <!-- Applies saved theme before the page paints (prevents flash) -->
+    <!-- Applies the saved theme before the page paints (prevents a flash) -->
     <script>
       try {
         var t = localStorage.getItem("theme");
@@ -30,6 +66,7 @@
     </script>
   </head>
   <body>
+    <noscript>This portfolio needs JavaScript to run. Please enable it in your browser.</noscript>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

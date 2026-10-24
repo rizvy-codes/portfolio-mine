@@ -8,8 +8,7 @@ export const about = {
   // Counters: "to" is the final number, "suffix" is shown after it
   stats: [
     { label: "Projects", to: 10, suffix: "+" },
-    { label: "Year Experience", to: 1, suffix: "+" },
-    { label: "Happy Clients", to: 5, suffix: "+" },
+    { label: "Happy Clients", to: 2, suffix: "+" },
   ],
 };
 

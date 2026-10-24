@@ -63,8 +63,8 @@ export default function About() {
             transition={{ duration: 0.8 }}
           >
             <h3 className="font-display text-2xl font-bold sm:text-3xl">
-              Hi, I&apos;m {profile.name}, a{" "}
-              <span className="text-gradient">Full Stack Developer</span>
+              Hi, I&apos;m {profile.name}, {" "}
+              <span className="text-gradient">Full Stack Web Developer</span>
             </h3>
 
             <div className="mt-5 space-y-4 leading-relaxed text-muted">

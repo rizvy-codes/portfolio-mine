@@ -54,6 +54,8 @@ export default function ProjectCard({
 
           <button
             onClick={onOpen}
+            data-track="project"
+            data-project={project.id}
             aria-label={`Open details for ${project.title}`}
             className="group/btn mt-6 flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-brand-cyan via-brand-violet to-brand-pink px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-brand-violet/20 transition hover:shadow-brand-violet/40"
           >
